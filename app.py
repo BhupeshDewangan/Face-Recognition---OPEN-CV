@@ -107,7 +107,6 @@ def main():
 			enhancer = ImageEnhance.Contrast(our_image)
 			img_output = enhancer.enhance(c_rate)
 			col2.image(img_output)
-			col2.download_button("Download Image", img_output, 'Image.png', mime = 'png')
 
 		elif enhance_type == 'Brightness':
 			c_rate = st.sidebar.slider("Brightness",0.5,3.5)
